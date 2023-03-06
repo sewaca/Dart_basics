@@ -23,7 +23,3 @@ class Point {
     return sqrt(pow(x - a.x, 2) + pow(y - a.y, 2) + pow(z - a.z, 2));
   }
 }
-
-double squareOfTriangle(Point a, Point b, Point c) {
-  return 0.5 * ((a.x - c.x) * (b.y - c.y) - (b.x - c.x) * (a.y - c.y));
-}
