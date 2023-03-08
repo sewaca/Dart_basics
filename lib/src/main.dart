@@ -10,8 +10,10 @@ import 'package:hm2/src/task_n9.dart';
 
 void main() {
   print("# Задание 1");
-  print(Task1().nod(5, 10));
-  print(Task1().nok(8, 20));
+  final task1 = Task1();
+  print(task1.nod(5, 10));
+  print(task1.nok(8, 20));
+  print(task1.decomposeIntoPrime(-2));
 
   print("# Задание 2");
   print(Task2().fromBinaryToDecimal("101"));

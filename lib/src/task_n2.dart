@@ -1,9 +1,10 @@
+import 'dart:ffi';
 import 'dart:math';
 
 class Task2 {
   String fromDecimalToBinary(int num) {
     String ans = "";
-    while (num > 0) {
+    while (num.abs() > 0) {
       ans += (num % 2).toString();
       num ~/= 2;
     }
